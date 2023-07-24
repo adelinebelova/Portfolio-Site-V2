@@ -1,9 +1,11 @@
 :root{
-    --antique: #f6e5d9;
-    --sage: #b9cdb5;
-    --olive: #3b422e;
+    
+    --antique: #d7bea8;
+    --pink: #c78283; 
+    --burgundy: #4d2734;
     --earth: #b28f75;
-    --lime: #CAFFBF;
+    --bright: #ffa5a7;
+
 }
 
 *{
@@ -44,7 +46,7 @@
 
 .logo{
     font-family: 'Latin Modern Mono Slanted' !important;
-    color: var(--olive);
+    color: var(--burgundy);
     flex: 2;
     font-size: 28px;
     min-width: 250px;
@@ -57,7 +59,7 @@
 .nav-options{
     font-family: 'Latin Modern Mono Slanted' !important;
     text-decoration: none;
-    color: var(--olive);
+    color: var(--burgundy);
     padding: 20px;
     font-size: 24px;
     min-width: 130px;
@@ -65,13 +67,9 @@
 }
 
 .nav-options:hover{
-    color: var(--sage);
+    color: var(--bright);
     transition: 0.2s ease-in-out;
 
-}
-
-.nav-options:active{
-    color: var(--sage);
 }
 
 .navbar a:nth-of-type(2){
@@ -87,16 +85,16 @@
 
 .navbar a:nth-of-type(4){
     min-width: 200px;
-    border: 2px solid var(--olive);
+    border: 2px solid var(--burgundy);
     padding: 15px;
     margin-right: 20px;
     border-radius: 15px;
-    background-color: var(--sage);
+    background-color: var(--pink);
 }
 
 .navbar a:nth-of-type(4):hover{
-    color:var(--olive);
-    background-color:var(--lime);
+    color:var(--burgundy);
+    background-color:var(--bright);
     transition: 0.2s ease-in-out;
 }
 
@@ -120,7 +118,7 @@
 }
 
 .highlight{
-    color: var(--sage) !important;
+    color: var(--pink) !important;
 }
 
 .body-home{
@@ -130,7 +128,7 @@
 
 .heading{
     font-size: 65px;
-    color: var(--olive);
+    color: var(--burgundy);
     justify-content: center;
     height: auto;
     text-align: center;
@@ -145,7 +143,7 @@
     width: 60vw;
     text-align: center;
     height: auto;
-    color: var(--olive);
+    color: var(--burgundy);
     font-size: 32px;
     margin:auto;
     padding: 30px;
@@ -159,11 +157,11 @@
     margin:auto;
     position: relative;
     width: 55vw;
-    border: 4px solid var(--olive);
+    border: 4px solid var(--burgundy);
     border-radius: 30px;
     padding: 20px;
-    color: var(--olive);
-    box-shadow: 12px 12px 0px var(--sage), 15px 15px 0px var(--olive);
+    color: var(--burgundy);
+    box-shadow: 12px 12px 0px var(--pink), 15px 15px 0px var(--burgundy);
     transform: scale(0.9);
     
 }
@@ -185,24 +183,24 @@
     min-width: 200px;
     width: 100px;
     text-align: center;
-    border: 2px solid var(--olive);
+    border: 2px solid var(--burgundy);
     padding: 15px;
     margin-right: auto;
     margin-left: auto;
     border-radius: 15px;
-    background-color: var(--sage);
+    background-color: var(--pink);
 }
 
 .resume-link{
     text-decoration: none;
-    color: var(--olive);
+    color: var(--burgundy);
     margin: 15px;
     font-size: 20px;
 }
 
 .resume:hover{
-    color:var(--olive);
-    background-color:var(--lime);
+    color:var(--burgundy);
+    background-color:var(--bright);
     transition: 0.2s ease-in-out;
 }
 
