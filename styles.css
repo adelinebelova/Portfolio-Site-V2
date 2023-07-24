@@ -1,0 +1,262 @@
+:root{
+    --antique: #f6e5d9;
+    --sage: #b9cdb5;
+    --olive: #3b422e;
+    --earth: #b28f75;
+    --lime: #CAFFBF;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    scroll-behavior: smooth;
+    font-family: 'Latin Modern Mono', 'Times New Roman';
+    text-decoration-skip-ink: none;
+}
+
+
+/**********************************************************
+                    H O M E P A G E
+**********************************************************/
+
+#wrapper-home{
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 120px;
+    
+}
+
+.navbar{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 90px;
+    background-color: var(--antique);
+    z-index: 3;
+}
+
+
+.logo{
+    font-family: 'Latin Modern Mono Slanted' !important;
+    color: var(--olive);
+    flex: 2;
+    font-size: 28px;
+    min-width: 250px;
+    padding: 20px;
+    padding-top:10px;
+    text-decoration: underline 4px;
+
+}
+
+.nav-options{
+    font-family: 'Latin Modern Mono Slanted' !important;
+    text-decoration: none;
+    color: var(--olive);
+    padding: 20px;
+    font-size: 24px;
+    min-width: 130px;
+    text-align: center;
+}
+
+.nav-options:hover{
+    color: var(--sage);
+    transition: 0.2s ease-in-out;
+
+}
+
+.nav-options:active{
+    color: var(--sage);
+}
+
+.navbar a:nth-of-type(2){
+    font-size: 38px;   
+    padding-right: 10;
+}
+
+
+.navbar a:nth-of-type(3){
+    padding-left: 0;
+    
+}
+
+.navbar a:nth-of-type(4){
+    min-width: 200px;
+    border: 2px solid var(--olive);
+    padding: 15px;
+    margin-right: 20px;
+    border-radius: 15px;
+    background-color: var(--sage);
+}
+
+.navbar a:nth-of-type(4):hover{
+    color:var(--olive);
+    background-color:var(--lime);
+    transition: 0.2s ease-in-out;
+}
+
+
+.body-home {
+    background-color: var(--antique);
+}
+
+.hero{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+    padding-top: 30px;
+}
+
+.slanted{
+    font-family: 'Latin Modern Mono Slanted' !important;
+}
+
+.highlight{
+    color: var(--sage) !important;
+}
+
+.body-home{
+    height: 100vh;
+    width: 100vw;
+}
+
+.heading{
+    font-size: 65px;
+    color: var(--olive);
+    justify-content: center;
+    height: auto;
+    text-align: center;
+    position: relative;
+    font-weight: 400;
+}
+
+.notion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    text-align: center;
+    height: auto;
+    color: var(--olive);
+    font-size: 32px;
+    margin:auto;
+    padding: 30px;
+
+}
+
+
+.text-box{
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    position: relative;
+    width: 55vw;
+    border: 4px solid var(--olive);
+    border-radius: 30px;
+    padding: 20px;
+    color: var(--olive);
+    box-shadow: 12px 12px 0px var(--sage), 15px 15px 0px var(--olive);
+    transform: scale(0.9);
+    
+}
+
+
+.text-box  p {
+    margin: auto;
+    height: auto;
+    width: 90%;
+    text-align: left;
+    justify-content: center;
+    position: relative;
+    font-size: 22px;
+    padding-top: 30px;
+
+}
+
+.resume{
+    min-width: 200px;
+    width: 100px;
+    text-align: center;
+    border: 2px solid var(--olive);
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    background-color: var(--sage);
+}
+
+.resume-link{
+    text-decoration: none;
+    color: var(--olive);
+    margin: 15px;
+    font-size: 20px;
+}
+
+.resume:hover{
+    color:var(--olive);
+    background-color:var(--lime);
+    transition: 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 750px){
+    .logo{
+        font-size: 20px;
+        min-width: 150px;
+    }
+
+    .nav-options{
+        font-size: 15px;
+        min-width: 50px;
+        padding: 0;
+        
+    }
+
+    .navbar a:nth-of-type(2){
+        font-size: 30px;   
+        margin-right: 5px;
+    }
+
+    .navbar a:nth-of-type(4){
+        font-size: 15px;
+        margin:0;
+        min-width: 150px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .resume{
+        min-width: 130px;
+    }
+
+}
+
+@media screen and (max-width:400px){
+
+    .text-box p {
+        font-size: 18px;
+    }
+
+    .text-box p:nth-of-type(2) {
+        font-size: 20px;
+    }
+
+    .navbar a:nth-of-type(4){
+        font-size: 10px;
+        margin:0;
+        min-width: 50px;
+        margin-right: 10px;
+    }
+
+    .resume{
+        min-width: 80px;
+    }
+}
+
