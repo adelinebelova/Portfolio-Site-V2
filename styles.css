@@ -1,10 +1,11 @@
 :root{
     
     --antique: #d7bea8;
-    --pink: #c78283; 
+    --pink: #ca787a; 
     --burgundy: #4d2734;
     --earth: #b28f75;
     --bright: #ffa5a7;
+    --lemon: #ffc66b;
 
 }
 
@@ -57,7 +58,7 @@
 }
 
 .nav-options{
-    font-family: 'Latin Modern Mono Slanted' !important;
+    font-family: 'Latin Modern Mono' !important;
     text-decoration: none;
     color: var(--burgundy);
     padding: 20px;
@@ -67,23 +68,20 @@
 }
 
 .nav-options:hover{
-    color: var(--bright);
+    color: var(--pink);
     transition: 0.2s ease-in-out;
 
 }
 
-.navbar a:nth-of-type(2){
-    font-size: 38px;   
-    padding-right: 10;
-}
-
-
-.navbar a:nth-of-type(3){
+.icon{
+    font-size: 40px;
     padding-left: 0;
-    
+    padding-right: 0;
+    min-width: 100px;
 }
 
-.navbar a:nth-of-type(4){
+
+.navbar a:nth-of-type(5){
     min-width: 200px;
     border: 2px solid var(--burgundy);
     padding: 15px;
@@ -92,10 +90,15 @@
     background-color: var(--pink);
 }
 
-.navbar a:nth-of-type(4):hover{
+.navbar a:nth-of-type(5):hover{
     color:var(--burgundy);
     background-color:var(--bright);
     transition: 0.2s ease-in-out;
+}
+
+.navbar a:nth-of-type(4){
+    text-decoration: underline solid 2px;
+    margin-right: 20px;
 }
 
 
@@ -217,12 +220,16 @@
         
     }
 
-    .navbar a:nth-of-type(2){
+    .navbar a:nth-of-type(4){
+        font-size: 18px;
+    }
+
+    .navbar a:nth-of-type(3), .navbar a:nth-of-type(2){
         font-size: 30px;   
         margin-right: 5px;
     }
 
-    .navbar a:nth-of-type(4){
+    .navbar a:nth-of-type(5){
         font-size: 15px;
         margin:0;
         min-width: 150px;
@@ -242,11 +249,15 @@
         font-size: 18px;
     }
 
-    .text-box p:nth-of-type(2) {
+    .text-box p:nth-of-type(3), .navbar a:nth-of-type(2) {
         font-size: 20px;
     }
 
     .navbar a:nth-of-type(4){
+        font-size: 14px;
+    }
+
+    .navbar a:nth-of-type(5){
         font-size: 10px;
         margin:0;
         min-width: 50px;
@@ -258,3 +269,205 @@
     }
 }
 
+
+@keyframes textShine {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+.gradient {
+background: linear-gradient(
+    to right,
+    var(--pink) 10%,
+    var(--lemon) 50%,
+    var(--pink) 80%
+);
+
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+background-size: 500% auto;
+animation: textShine 1.5s ease-in-out 2 alternate;
+}
+
+
+/***************************
+    SKILLS SECTION
+***************************/
+
+
+/* Float */
+.hvr-float {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+
+    /* Same gradient as text */ 
+    background-image: linear-gradient(45deg, var(--pink), var(--pink));
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+            background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+            background-clip: text; 
+    -moz-text-fill-color: transparent;
+    transition: all 0.2s ease-in-out;
+    }
+  
+.skills{
+    background: rgb(202,120,122);
+    background: linear-gradient(90deg, rgba(202,120,122,1) 2%, rgba(255,198,107,1) 133%);
+    height: auto;
+    min-height: 150px;
+    width: 100%;
+    margin-top: 150px;
+    position: relative;
+    color: (--burgundy);
+}
+
+
+.skill-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    padding: 10px;
+    padding-top: 40px;
+    height: 100%;
+    font-size: 50px;
+    position: relative;
+}
+
+.skill-icons{
+    font-size: 60px;
+    color: var(--burgundy);
+}
+
+.skills i{
+    padding-bottom: 18px;
+}
+
+.skills h1{
+    color: var(--burgundy);
+}
+
+@media screen and (max-width: 750px){
+    .skills h1 {
+        font-size: 30px;
+    }
+
+    .skill-icons{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .skills h1 {
+        font-size: 20px;
+    }
+
+    .skill-icons{
+        font-size: 25px;
+    }
+}
+
+.gradient-unanimated {
+    background: linear-gradient(
+        to right,
+        var(--bright) 10%,
+        var(--lemon) 30%,
+        var(--bright) 60%
+    );
+    
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+}
+
+
+/***************************
+    RESUME SECTION
+***************************/
+
+
+.resume-section{
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    background-color: var(--antique);
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.resume-section h1{
+    font-size: 40px;
+    width: 50vw;
+    padding-bottom: 50px;
+    color: var(--burgundy);
+    margin: auto; 
+    text-align: center;
+}
+
+.resume-links{ 
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.resume-links a{
+    text-decoration: none;
+    background-color: var(--pink);
+    padding: 20px;
+    border-radius: 15px;
+    border: solid 3px var(--burgundy);
+    width: auto;
+    max-width: 250px;
+    height: auto;
+    margin: auto;
+    font-size: 30px;
+    color: var(--burgundy);
+    display: block;
+    margin-top: 50px;
+    position: relative;
+}
+
+.resume-links a:hover{
+    background-color: var(--bright);
+    transition: 0.2s ease-in-out;
+}
+
+.resume-links a:nth-of-type(2){
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 750px){
+    .resume-links a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .resume-links a {
+        font-size: 14px;
+    }
+}
