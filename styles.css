@@ -645,6 +645,9 @@ animation: textShine 1.5s ease-in-out 2 alternate;
     padding-top: 8px;
 }
 
+.highlight-2{
+    color: var(--bright);
+}
 
 
 /***************************
