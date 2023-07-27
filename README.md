@@ -1,5 +1,5 @@
 # Portfolio-Site-V2
-View page here: https://adelinebelova.github.io/Portfolio-Site-V2/ 
+View page here: https://adelinebelova.netlify.app/
 
 Welcome to my portfolio website!
 
